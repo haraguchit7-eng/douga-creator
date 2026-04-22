@@ -3,30 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>副業者専用 | 動画編集クリエーター無料登録</title>
-  <meta name="description" content="副業者専用の動画編集クリエーター登録ページ。案件紹介、継続案件の獲得導線、単価アップのヒントを無料で受け取れます。" />
+  <title>副業者専用｜動画編集で月5万円を目指す無料登録ページ</title>
+  <meta name="description" content="副業者専用の動画編集クリエーター登録ページ。本業を続けながら案件獲得を目指したい人へ。案件導線、継続案件の考え方、単価アップのヒントを無料で受け取れます。" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #0a0a0f;
-      --bg2: #11111a;
-      --bg3: #181824;
+      --bg: #0b0b10;
+      --bg2: #12131a;
+      --bg3: #171924;
       --card: rgba(255,255,255,0.05);
-      --line: rgba(255,255,255,0.12);
+      --card-strong: rgba(255,255,255,0.08);
+      --line: rgba(255,255,255,0.1);
       --text: #ffffff;
-      --muted: #c5c7d0;
-      --sub: #9aa0ad;
-      --accent1: #ff7a1a;
-      --accent2: #ffc247;
-      --accent3: #ffe08a;
-      --grad: linear-gradient(135deg, #ff7a1a 0%, #ffb028 55%, #ffd86b 100%);
-      --gradText: linear-gradient(90deg, #ff9a2f 0%, #ffd96f 100%);
-      --success: #22c55e;
+      --muted: #c8ccd6;
+      --sub: #9aa1b0;
+      --accent1: #ff7b1b;
+      --accent2: #ffbf3d;
+      --accent3: #ffe29a;
+      --grad: linear-gradient(135deg, #ff7b1b 0%, #ffb12f 55%, #ffe07a 100%);
+      --grad-text: linear-gradient(90deg, #ff9e39 0%, #ffe07a 100%);
       --danger: #ff6b35;
-      --shadow: 0 18px 60px rgba(0,0,0,0.34);
-      --radius: 20px;
-      --max: 1120px;
+      --success: #22c55e;
+      --radius: 22px;
+      --shadow: 0 18px 60px rgba(0,0,0,0.35);
+      --max: 1160px;
     }
 
     html { scroll-behavior: smooth; }
@@ -34,370 +35,767 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
       background:
-        radial-gradient(circle at top left, rgba(255,122,26,0.16), transparent 30%),
-        radial-gradient(circle at 80% 10%, rgba(255,194,71,0.11), transparent 22%),
-        linear-gradient(180deg, #09090d 0%, #0f1017 45%, #0a0a0f 100%);
+        radial-gradient(circle at 10% 0%, rgba(255,123,27,0.16), transparent 28%),
+        radial-gradient(circle at 90% 8%, rgba(255,191,61,0.10), transparent 22%),
+        linear-gradient(180deg, #08090d 0%, #0f1118 46%, #0b0b10 100%);
       color: var(--text);
       line-height: 1.7;
       overflow-x: hidden;
     }
 
     a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
+    img { display: block; max-width: 100%; }
 
-    .container { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
-    .section { padding: 88px 0; position: relative; }
-    .section.alt { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); }
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 88px 0;
+      position: relative;
+    }
+
+    .section.alt {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    }
+
     .eyebrow {
-      display: inline-flex; align-items: center; gap: 8px;
-      border: 1px solid rgba(255,194,71,0.35);
-      background: rgba(255,194,71,0.09);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,191,61,0.32);
+      background: rgba(255,191,61,0.08);
       color: var(--accent3);
-      padding: 8px 14px; border-radius: 999px;
-      font-size: 12px; font-weight: 700; letter-spacing: .08em;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
       text-transform: uppercase;
     }
+
     .section-title {
+      margin-top: 18px;
       font-size: clamp(28px, 4vw, 46px);
-      line-height: 1.28; font-weight: 900; margin-top: 18px;
-      letter-spacing: -0.02em;
+      line-height: 1.25;
+      font-weight: 900;
+      letter-spacing: -0.03em;
     }
-    .section-title .grad {
-      background: var(--gradText);
+
+    .section-title .grad,
+    .grad-text {
+      background: var(--grad-text);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
+
     .section-lead {
-      color: var(--muted); font-size: clamp(15px, 1.8vw, 18px);
-      margin-top: 18px; max-width: 780px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: clamp(15px, 1.8vw, 18px);
+      max-width: 820px;
     }
 
     .topbar {
-      position: sticky; top: 0; z-index: 40;
+      position: sticky;
+      top: 0;
+      z-index: 60;
       backdrop-filter: blur(14px);
-      background: rgba(8,8,12,0.68);
+      background: rgba(8,9,14,0.74);
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
+
     .topbar-inner {
-      min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
     }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; }
-    .brand-badge {
-      width: 38px; height: 38px; border-radius: 12px;
-      background: var(--grad); color: #1c1403;
-      display: grid; place-items: center; font-size: 18px; box-shadow: var(--shadow);
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
     }
-    .brand small { display: block; color: var(--sub); font-size: 12px; font-weight: 600; }
+
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--grad);
+      color: #231603;
+      box-shadow: var(--shadow);
+      font-size: 18px;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--sub);
+      font-size: 12px;
+      font-weight: 700;
+    }
 
     .top-cta {
-      display: inline-flex; align-items: center; justify-content: center;
-      min-height: 48px; padding: 0 18px; border-radius: 999px;
-      background: var(--grad); color: #201300; font-weight: 900;
-      box-shadow: 0 12px 32px rgba(255,153,34,0.25);
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: var(--grad);
+      color: #231603;
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 32px rgba(255,153,34,0.28);
       transition: transform .2s ease, box-shadow .2s ease;
       white-space: nowrap;
     }
-    .top-cta:hover { transform: translateY(-2px); box-shadow: 0 18px 40px rgba(255,153,34,0.32); }
+
+    .top-cta:hover,
+    .btn-primary:hover,
+    .submit-btn:hover,
+    .sticky-btn:hover {
+      transform: translateY(-2px);
+    }
 
     .hero {
-      padding: 72px 0 42px;
+      padding: 54px 0 34px;
     }
+
     .hero-grid {
-      display: grid; grid-template-columns: 1.15fr .85fr; gap: 28px; align-items: center;
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 28px;
+      align-items: start;
     }
+
     .hero-copy {
-      padding: 10px 0;
+      padding-top: 14px;
     }
+
     .hero-title {
-      font-size: clamp(34px, 5vw, 64px);
-      line-height: 1.1; font-weight: 900; letter-spacing: -0.03em; margin-top: 18px;
+      margin-top: 18px;
+      font-size: clamp(34px, 5vw, 66px);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      font-weight: 900;
     }
+
     .hero-title .accent {
-      background: var(--gradText);
+      background: var(--grad-text);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
+
     .hero-sub {
+      margin-top: 22px;
       font-size: clamp(16px, 2vw, 20px);
-      color: var(--muted); margin-top: 22px; max-width: 720px;
+      color: var(--muted);
+      max-width: 720px;
     }
-    .hero-points {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 24px;
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
     }
-    .point {
+
+    .badge {
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      color: #fff3cc;
       background: rgba(255,255,255,0.04);
       border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 16px; padding: 14px 14px;
-      font-size: 14px; color: var(--muted); min-height: 74px;
     }
-    .point strong { display: block; color: var(--accent3); font-size: 14px; margin-bottom: 2px; }
 
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
-    .btn-primary, .btn-secondary {
-      min-height: 58px; padding: 0 24px; border-radius: 999px; font-weight: 900; display: inline-flex; align-items: center; justify-content: center;
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .point {
+      min-height: 92px;
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .point strong {
+      display: block;
+      color: var(--accent3);
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      min-height: 58px;
+      padding: 0 24px;
+      border-radius: 999px;
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
     }
-    .btn-primary {
-      background: var(--grad); color: #221503;
-      box-shadow: 0 18px 42px rgba(255,146,30,0.3);
+
+    .btn-primary,
+    .submit-btn,
+    .sticky-btn {
+      background: var(--grad);
+      color: #241603;
+      box-shadow: 0 18px 44px rgba(255,153,34,0.32);
     }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 24px 52px rgba(255,146,30,0.35); }
+
     .btn-secondary {
-      background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12); color: var(--text);
-    }
-    .btn-secondary:hover { transform: translateY(-2px); background: rgba(255,255,255,0.06); }
-
-    .hero-note { color: var(--sub); font-size: 13px; margin-top: 14px; }
-
-    .hero-card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      background: rgba(255,255,255,0.03);
       border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 28px; padding: 22px; box-shadow: var(--shadow); position: relative; overflow: hidden;
-    }
-    .hero-card::before {
-      content: ""; position: absolute; inset: auto -10% 72% auto; width: 200px; height: 200px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,194,71,0.24), transparent 70%);
-    }
-    .hero-card-head {
-      display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px;
-    }
-    .hero-mini {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 8px 12px; border-radius: 999px; background: rgba(255,122,26,0.12); color: #ffd9ad;
-      border: 1px solid rgba(255,122,26,0.25); font-size: 12px; font-weight: 700;
-    }
-    .hero-proof {
-      display: grid; gap: 14px;
-    }
-    .proof-item {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 18px; padding: 18px;
-    }
-    .proof-label { color: var(--sub); font-size: 13px; }
-    .proof-num {
-      margin-top: 4px; font-size: clamp(24px, 4vw, 40px); line-height: 1.1; font-weight: 900;
-      background: var(--gradText); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-    }
-    .proof-copy { color: var(--muted); font-size: 14px; margin-top: 6px; }
-
-    .bar {
-      display: flex; gap: 14px; flex-wrap: wrap; margin-top: 26px;
-    }
-    .bar-item {
-      display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px;
-      border-radius: 999px; font-size: 13px; color: var(--muted);
-      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+      color: var(--text);
     }
 
-    .grid-3, .grid-4, .grid-2 {
-      display: grid; gap: 18px;
-    }
-    .grid-2 { grid-template-columns: repeat(2, 1fr); }
-    .grid-3 { grid-template-columns: repeat(3, 1fr); }
-    .grid-4 { grid-template-columns: repeat(4, 1fr); }
-
-    .card {
-      background: var(--card); border: 1px solid rgba(255,255,255,0.09);
-      border-radius: var(--radius); padding: 24px; box-shadow: 0 10px 24px rgba(0,0,0,0.15);
-    }
-    .card h3 { font-size: 20px; line-height: 1.35; margin-bottom: 10px; }
-    .card p { color: var(--muted); font-size: 15px; }
-    .icon {
-      width: 48px; height: 48px; border-radius: 14px; background: rgba(255,194,71,0.12); color: var(--accent3);
-      display: grid; place-items: center; font-size: 22px; margin-bottom: 14px;
-      border: 1px solid rgba(255,194,71,0.2);
+    .hero-note {
+      margin-top: 14px;
+      color: var(--sub);
+      font-size: 13px;
     }
 
-    .pain-list { display: grid; gap: 14px; margin-top: 30px; }
-    .pain-item {
-      display: grid; grid-template-columns: 28px 1fr; gap: 14px; align-items: start;
-      background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 18px 20px;
-    }
-    .pain-item b { color: #fff0bf; }
-    .pain-item p { color: var(--muted); }
-
-    .before-after {
-      display: grid; grid-template-columns: 1fr auto 1fr; gap: 18px; align-items: stretch; margin-top: 32px;
-    }
-    .ba-card {
-      padding: 24px; border-radius: 22px; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.04);
-    }
-    .ba-card h3 { font-size: 22px; margin-bottom: 12px; }
-    .ba-card ul { list-style: none; display: grid; gap: 10px; }
-    .ba-card li { color: var(--muted); font-size: 15px; }
-    .ba-card.before h3 { color: #ffbeab; }
-    .ba-card.after h3 { color: #ffe9a6; }
-    .arrow-mid {
-      display: grid; place-items: center; font-size: 36px; color: var(--accent3); font-weight: 900;
+    .hero-side {
+      display: grid;
+      gap: 18px;
     }
 
-    .feature-highlight {
-      margin-top: 30px;
-      display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px; align-items: stretch;
+    .side-card,
+    .card,
+    .quick-form,
+    .result-card,
+    .faq details,
+    .step,
+    .trust-item,
+    .voice {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.16);
     }
-    .feature-main {
-      border-radius: 28px; padding: 30px; background: linear-gradient(135deg, rgba(255,122,26,0.16), rgba(255,194,71,0.08));
-      border: 1px solid rgba(255,194,71,0.18);
+
+    .quick-form {
+      padding: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
       box-shadow: var(--shadow);
     }
-    .feature-main h3 { font-size: clamp(24px, 3.2vw, 36px); line-height: 1.25; }
-    .feature-main p { color: var(--muted); margin-top: 14px; font-size: 16px; }
-    .feature-stack { display: grid; gap: 18px; }
 
-    .steps { display: grid; gap: 16px; margin-top: 28px; }
-    .step {
-      display: grid; grid-template-columns: 66px 1fr; gap: 18px; align-items: start;
-      border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.04); border-radius: 18px; padding: 20px;
+    .quick-form h3 {
+      font-size: clamp(22px, 2.6vw, 32px);
+      line-height: 1.25;
     }
-    .step-no {
-      width: 66px; height: 66px; border-radius: 18px; background: var(--grad); color: #291600;
-      display: grid; place-items: center; font-size: 28px; font-weight: 900;
-    }
-    .step h3 { margin-bottom: 6px; font-size: 20px; }
-    .step p { color: var(--muted); }
 
-    .voice-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px;
+    .quick-form p {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
     }
-    .voice {
-      background: rgba(255,255,255,0.045); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 22px;
-    }
-    .voice .quote { font-size: 30px; line-height: 1; color: var(--accent3); }
-    .voice p { color: var(--muted); font-size: 15px; margin-top: 12px; }
-    .voice strong { display: block; margin-top: 16px; color: #fff; }
-    .voice span { color: var(--sub); font-size: 13px; }
 
-    .trust-strip {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 28px;
+    .mini-proof {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
     }
-    .trust-item {
-      text-align: center; padding: 18px 14px; border-radius: 16px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
-    }
-    .trust-item strong { display: block; margin-top: 6px; }
-    .trust-item p { color: var(--sub); font-size: 13px; margin-top: 4px; }
 
-    .faq { margin-top: 28px; display: grid; gap: 14px; }
-    .faq details {
-      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 18px 20px;
+    .mini-proof-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 12px 14px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      color: var(--muted);
+      font-size: 14px;
     }
-    .faq summary {
-      cursor: pointer; font-weight: 800; list-style: none; position: relative; padding-right: 26px;
-    }
-    .faq summary::-webkit-details-marker { display: none; }
-    .faq summary::after {
-      content: "+"; position: absolute; right: 0; top: 0; color: var(--accent3); font-size: 22px; line-height: 1;
-    }
-    .faq details[open] summary::after { content: "−"; }
-    .faq p { color: var(--muted); margin-top: 10px; }
 
-    .cta-box {
-      margin-top: 32px; padding: 34px; border-radius: 28px;
-      background: linear-gradient(135deg, rgba(255,122,26,0.18), rgba(255,194,71,0.10));
-      border: 1px solid rgba(255,194,71,0.22); box-shadow: var(--shadow);
-      text-align: center;
-    }
-    .cta-box h3 { font-size: clamp(24px, 3vw, 36px); line-height: 1.25; }
-    .cta-box p { color: var(--muted); margin-top: 12px; font-size: 16px; }
-    .cta-box .hero-actions { justify-content: center; }
+    .mini-proof-item strong { color: #fff2c1; }
 
-    form {
-      margin-top: 28px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 24px; padding: 28px; box-shadow: var(--shadow);
+    .quick-grid {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
     }
-    .form-head h3 { font-size: clamp(24px, 3vw, 34px); line-height: 1.25; }
-    .form-head p { color: var(--muted); margin-top: 10px; }
-    .form-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 22px;
+
+    .field {
+      display: grid;
+      gap: 8px;
     }
-    .field { display: grid; gap: 8px; }
-    .field.full { grid-column: 1 / -1; }
-    label { font-size: 14px; color: #f5e7c8; font-weight: 700; }
-    input, select, textarea {
-      width: 100%; min-height: 54px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(0,0,0,0.22); color: var(--text); padding: 14px 16px; font-size: 15px;
-      outline: none; transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+
+    label {
+      font-size: 14px;
+      font-weight: 800;
+      color: #f6e8c6;
     }
-    textarea { min-height: 120px; resize: vertical; }
-    input:focus, select:focus, textarea:focus {
-      border-color: rgba(255,194,71,0.55); box-shadow: 0 0 0 4px rgba(255,194,71,0.09); background: rgba(255,255,255,0.04);
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 52px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(0,0,0,0.22);
+      color: var(--text);
+      font-size: 15px;
+      outline: none;
+      transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
     }
-    .submit-wrap { margin-top: 18px; }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: rgba(255,191,61,0.55);
+      box-shadow: 0 0 0 4px rgba(255,191,61,0.10);
+      background: rgba(255,255,255,0.04);
+    }
+
     .submit-btn {
-      width: 100%; min-height: 62px; border: 0; border-radius: 999px;
-      background: var(--grad); color: #291700; font-weight: 900; font-size: 18px; cursor: pointer;
-      box-shadow: 0 20px 48px rgba(255,153,34,0.3);
+      width: 100%;
+      min-height: 58px;
+      border: 0;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 17px;
+      cursor: pointer;
       transition: transform .2s ease, box-shadow .2s ease;
     }
-    .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 26px 58px rgba(255,153,34,0.38); }
+
+    .quick-note,
     .form-meta {
-      margin-top: 12px; font-size: 13px; color: var(--sub); text-align: center;
+      margin-top: 12px;
+      color: var(--sub);
+      font-size: 12px;
+      text-align: center;
     }
+
+    .side-card {
+      padding: 20px;
+    }
+
+    .side-card h4 {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .stats-grid,
+    .cards-3,
+    .cards-4,
+    .result-grid,
+    .trust-grid,
+    .voices-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .stats-grid { grid-template-columns: repeat(4, 1fr); margin-top: 28px; }
+    .cards-3 { grid-template-columns: repeat(3, 1fr); margin-top: 28px; }
+    .cards-4 { grid-template-columns: repeat(4, 1fr); margin-top: 28px; }
+    .result-grid { grid-template-columns: repeat(3, 1fr); margin-top: 30px; }
+    .trust-grid { grid-template-columns: repeat(4, 1fr); margin-top: 28px; }
+    .voices-grid { grid-template-columns: repeat(3, 1fr); margin-top: 28px; }
+
+    .stat-card {
+      padding: 24px 18px;
+      text-align: center;
+    }
+
+    .stat-num {
+      font-size: clamp(26px, 4vw, 42px);
+      line-height: 1.1;
+      font-weight: 900;
+      background: var(--grad-text);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .stat-label {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .card {
+      padding: 24px;
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,191,61,0.10);
+      border: 1px solid rgba(255,191,61,0.18);
+      color: var(--accent3);
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    .card h3,
+    .result-card h3,
+    .voice strong,
+    .step h3 {
+      line-height: 1.35;
+    }
+
+    .card p,
+    .result-card p,
+    .voice p,
+    .step p,
+    .trust-item p,
+    .faq p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-top: 8px;
+    }
+
+    .pain-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .pain-item {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.035);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .pain-item b { color: #fff2c6; }
+    .pain-item span { color: var(--accent3); font-weight: 900; }
+
+    .highlight-band {
+      margin-top: 32px;
+      padding: 28px;
+      border-radius: 26px;
+      background: linear-gradient(135deg, rgba(255,123,27,0.18), rgba(255,191,61,0.08));
+      border: 1px solid rgba(255,191,61,0.18);
+      box-shadow: var(--shadow);
+    }
+
+    .highlight-band h3 {
+      font-size: clamp(24px, 3vw, 36px);
+      line-height: 1.25;
+    }
+
+    .highlight-band p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 860px;
+    }
+
+    .result-card {
+      padding: 24px;
+    }
+
+    .result-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,123,27,0.12);
+      border: 1px solid rgba(255,123,27,0.20);
+      color: #ffd7ab;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .quote {
+      font-size: 30px;
+      line-height: 1;
+      color: var(--accent3);
+    }
+
+    .voice {
+      padding: 22px;
+    }
+
+    .voice span {
+      display: block;
+      margin-top: 10px;
+      color: var(--sub);
+      font-size: 13px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 66px 1fr;
+      gap: 18px;
+      padding: 20px;
+    }
+
+    .step-no {
+      width: 66px;
+      height: 66px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: var(--grad);
+      color: #241603;
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .faq details {
+      padding: 18px 20px;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 900;
+      position: relative;
+      padding-right: 24px;
+    }
+
+    .faq summary::-webkit-details-marker { display: none; }
+
+    .faq summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: var(--accent3);
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    .faq details[open] summary::after { content: "−"; }
+
+    .full-form {
+      margin-top: 30px;
+      padding: 28px;
+      border-radius: 26px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow: var(--shadow);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .field.full { grid-column: 1 / -1; }
+
     .form-message {
-      display: none; margin-top: 16px; padding: 14px 16px; border-radius: 14px; font-size: 14px; font-weight: 700;
+      display: none;
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      font-size: 14px;
+      font-weight: 800;
     }
-    .form-message.success { display: block; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.32); color: #a7f3d0; }
-    .form-message.error { display: block; background: rgba(255,107,53,0.13); border: 1px solid rgba(255,107,53,0.28); color: #ffd2c1; }
+
+    .form-message.success {
+      display: block;
+      background: rgba(34,197,94,0.12);
+      border: 1px solid rgba(34,197,94,0.30);
+      color: #a7f3d0;
+    }
+
+    .form-message.error {
+      display: block;
+      background: rgba(255,107,53,0.14);
+      border: 1px solid rgba(255,107,53,0.28);
+      color: #ffd1c0;
+    }
+
+    .cta-box {
+      margin-top: 30px;
+      padding: 34px;
+      border-radius: 28px;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(255,123,27,0.18), rgba(255,191,61,0.10));
+      border: 1px solid rgba(255,191,61,0.20);
+      box-shadow: var(--shadow);
+    }
+
+    .cta-box h3 {
+      font-size: clamp(24px, 3vw, 38px);
+      line-height: 1.25;
+    }
+
+    .cta-box p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 16px;
+    }
 
     footer {
-      padding: 42px 0 82px; border-top: 1px solid rgba(255,255,255,0.08); background: rgba(0,0,0,0.16);
+      padding: 42px 0 86px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      background: rgba(0,0,0,0.16);
     }
+
     .footer-grid {
-      display: grid; grid-template-columns: 1.2fr .8fr; gap: 22px; align-items: start;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 24px;
+      align-items: start;
     }
-    .footer-brand h3 { font-size: 22px; }
-    .footer-brand p, .footer-links p, .footer-links a { color: var(--sub); font-size: 14px; }
-    .footer-links { display: grid; gap: 10px; }
-    .footer-links a:hover { color: #fff; }
+
+    .footer-grid p,
+    .footer-grid a {
+      color: var(--sub);
+      font-size: 14px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 10px;
+    }
 
     .sticky-cta {
-      position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 60;
-      width: min(760px, calc(100% - 20px));
-      display: flex; align-items: center; justify-content: space-between; gap: 14px;
-      background: rgba(9,9,14,0.86); backdrop-filter: blur(14px);
-      border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 12px 12px 12px 16px;
-      box-shadow: 0 22px 56px rgba(0,0,0,0.38);
+      position: fixed;
+      left: 50%;
+      bottom: 16px;
+      transform: translateX(-50%);
+      z-index: 70;
+      width: min(780px, calc(100% - 20px));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 12px 12px 12px 16px;
+      border-radius: 20px;
+      background: rgba(9,10,15,0.88);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 22px 56px rgba(0,0,0,0.40);
     }
-    .sticky-copy strong { display: block; font-size: 14px; }
-    .sticky-copy span { font-size: 12px; color: var(--sub); }
+
+    .sticky-copy strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .sticky-copy span {
+      font-size: 12px;
+      color: var(--sub);
+    }
+
     .sticky-btn {
-      flex-shrink: 0; min-height: 48px; padding: 0 18px; border-radius: 999px;
-      background: var(--grad); color: #291700; font-weight: 900;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
     }
 
-    .reveal { opacity: 0; transform: translateY(26px); transition: all .7s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
 
-    @media (max-width: 980px) {
-      .hero-grid, .feature-highlight, .footer-grid, .grid-2, .grid-3, .grid-4, .voice-grid, .trust-strip, .before-after {
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1040px) {
+      .hero-grid,
+      .stats-grid,
+      .cards-3,
+      .cards-4,
+      .result-grid,
+      .trust-grid,
+      .voices-grid,
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-grid {
         grid-template-columns: 1fr;
       }
-      .hero-points { grid-template-columns: 1fr; }
-      .arrow-mid { transform: rotate(90deg); min-height: 40px; }
+
+      .hero-points {
+        grid-template-columns: 1fr;
+      }
     }
 
-    @media (max-width: 720px) {
-      .topbar-inner { min-height: 64px; }
-      .topbar .brand div:last-child { display: none; }
-      .top-cta { min-height: 42px; padding: 0 14px; font-size: 13px; }
+    @media (max-width: 760px) {
+      .container { width: min(var(--max), calc(100% - 20px)); }
       .section { padding: 72px 0; }
-      .hero { padding-top: 40px; }
-      .form-grid { grid-template-columns: 1fr; }
-      form { padding: 22px; }
-      .sticky-cta { padding: 10px 10px 10px 14px; gap: 10px; }
-      .sticky-copy strong { font-size: 13px; }
+      .topbar-inner { min-height: 64px; }
+      .brand div:last-child { display: none; }
+      .stats-grid,
+      .cards-3,
+      .cards-4,
+      .result-grid,
+      .trust-grid,
+      .voices-grid,
+      .form-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-actions { flex-direction: column; }
+      .btn-primary,
+      .btn-secondary { width: 100%; }
+      .step { grid-template-columns: 56px 1fr; }
+      .step-no { width: 56px; height: 56px; font-size: 24px; }
+      .sticky-copy span { display: none; }
       .sticky-btn { padding: 0 14px; font-size: 13px; }
     }
 
     @media (max-width: 520px) {
-      .container { width: min(var(--max), calc(100% - 20px)); }
-      .btn-primary, .btn-secondary { width: 100%; }
-      .hero-actions { flex-direction: column; }
-      .sticky-copy span { display: none; }
+      .sticky-cta {
+        width: calc(100% - 16px);
+        padding: 10px 10px 10px 14px;
+      }
+      .sticky-copy strong { font-size: 13px; }
     }
   </style>
 </head>
@@ -405,7 +803,7 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <div class="brand">
-        <div class="brand-badge">🎬</div>
+        <div class="brand-icon">🎬</div>
         <div>
           動画編集クリエーター登録
           <small>副業者専用の案件導線</small>
@@ -419,230 +817,251 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <div class="eyebrow">副業者専用 / Creator Registration</div>
+          <div class="eyebrow">副業者専用 / 月5万円を目指す</div>
           <h1 class="hero-title">
             <span class="accent">副業者専用</span>だから、<br>
             本業を続けながらでも<br>
-            <span class="accent">案件獲得を目指せる。</span>
+            <span class="accent">動画編集で月5万円</span>を目指せる。
           </h1>
           <p class="hero-sub">
-            動画編集スキルはあるのに案件が取れない。営業が苦手。単価が安い。そんな悩みを抱える人向けに、<strong>案件紹介・継続案件への導線・単価アップのヒント</strong>をまとめて受け取れる登録ページです。
+            動画編集スキルはあるのに案件が取れない。営業が苦手。単価が安い。そんな悩みを抱える人へ。<strong>案件導線・継続案件の考え方・単価アップのヒント</strong>を無料で受け取れる登録ページです。
           </p>
 
+          <div class="hero-badges">
+            <span class="badge">案件紹介あり</span>
+            <span class="badge">登録無料</span>
+            <span class="badge">勧誘なし</span>
+            <span class="badge">副業者専用</span>
+          </div>
+
           <div class="hero-points">
-            <div class="point"><strong>案件紹介あり</strong>スキルに合う案件情報を受け取れる</div>
-            <div class="point"><strong>副業者向け設計</strong>本業と両立しやすい働き方を前提に設計</div>
-            <div class="point"><strong>登録無料</strong>まずは情報取得だけでもOK</div>
+            <div class="point"><strong>案件の入口を持てる</strong>まずは接点がないと始まらない。案件導線を持つことでチャンスが生まれます。</div>
+            <div class="point"><strong>継続案件を意識できる</strong>単発で疲弊する働き方から、続く案件を取る視点へ。</div>
+            <div class="point"><strong>本業との両立前提</strong>独立前提ではなく、副業だからこその現実的な動き方に寄せています。</div>
           </div>
 
           <div class="hero-actions">
-            <a href="#entry" class="btn-primary">無料でクリエーター登録する</a>
-            <a href="#benefits" class="btn-secondary">登録メリットを見る</a>
+            <a href="#entry" class="btn-primary">無料で案件導線に登録する</a>
+            <a href="#results" class="btn-secondary">実績を見る</a>
           </div>
-          <p class="hero-note">登録無料 / 勧誘なし / いつでも停止可能</p>
-
-          <div class="bar">
-            <div class="bar-item">✅ 副業者専用</div>
-            <div class="bar-item">✅ 未経験〜経験者まで対応</div>
-            <div class="bar-item">✅ 継続案件を目指せる</div>
-          </div>
+          <p class="hero-note">30秒で登録 / まずは情報を受け取るだけでもOK</p>
         </div>
 
-        <aside class="hero-card reveal">
-          <div class="hero-card-head">
-            <div class="hero-mini">最初の一歩を、最短に。</div>
-            <div class="hero-mini">30秒登録</div>
+        <div class="hero-side reveal">
+          <form id="quick-form" class="quick-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+            <h3>今すぐ無料登録して、<br><span class="grad-text">案件獲得の入口</span>を持つ</h3>
+            <p>まずはメールアドレス登録から。副業者専用の導線に参加できます。</p>
+
+            <div class="mini-proof">
+              <div class="mini-proof-item">✅ <div><strong>本業を続けながらでもOK</strong><br>副業者向けの前提で設計</div></div>
+              <div class="mini-proof-item">✅ <div><strong>未経験〜経験者まで対応</strong><br>今のレベルから次の一歩へ</div></div>
+              <div class="mini-proof-item">✅ <div><strong>無料で登録可能</strong><br>低リスクで始められます</div></div>
+            </div>
+
+            <div class="quick-grid">
+              <div class="field">
+                <label for="quick-name">お名前</label>
+                <input id="quick-name" name="name" type="text" placeholder="例：田中 太郎" required>
+              </div>
+              <div class="field">
+                <label for="quick-email">メールアドレス</label>
+                <input id="quick-email" name="email" type="email" placeholder="example@email.com" required>
+              </div>
+              <div class="field">
+                <label for="quick-exp">動画編集の経験</label>
+                <select id="quick-exp" name="experience" required>
+                  <option value="">選択してください</option>
+                  <option>未経験</option>
+                  <option>勉強中</option>
+                  <option>副業を始めたばかり</option>
+                  <option>副業で案件経験あり</option>
+                  <option>継続案件あり</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="quick-goal">目標</label>
+                <select id="quick-goal" name="goal" required>
+                  <option value="">選択してください</option>
+                  <option>初案件を取りたい</option>
+                  <option>月5万円を目指したい</option>
+                  <option>継続案件を増やしたい</option>
+                  <option>単価を上げたい</option>
+                </select>
+              </div>
+            </div>
+
+            <input type="hidden" name="_subject" value="【副業者専用】動画編集クリエーター登録がありました（上部フォーム）">
+            <input type="hidden" name="source" value="GitHub Pages LP Quick Form">
+
+            <button type="submit" class="submit-btn" style="margin-top:16px;">30秒で無料登録する</button>
+            <p class="quick-note">登録無料 / 勧誘なし / 送信後に確認メッセージが表示されます</p>
+            <div id="quick-message" class="form-message"></div>
+          </form>
+
+          <div class="side-card">
+            <h4>こんな人におすすめです</h4>
+            <p>・動画編集スキルはあるのに案件が取れない<br>
+               ・副業で月5万円を目指したい<br>
+               ・クラウドソーシングの消耗から抜けたい<br>
+               ・本業があるから効率よく案件導線を作りたい</p>
           </div>
-          <div class="hero-proof">
-            <div class="proof-item">
-              <div class="proof-label">こんな人向け</div>
-              <div class="proof-num">副業者専用</div>
-              <div class="proof-copy">本業があるからこそ、遠回りせず案件導線を持ちたい人へ。</div>
-            </div>
-            <div class="proof-item">
-              <div class="proof-label">受け取れるもの</div>
-              <div class="proof-num">案件 × 導線</div>
-              <div class="proof-copy">単発ではなく、継続案件につながる考え方までカバー。</div>
-            </div>
-            <div class="proof-item">
-              <div class="proof-label">登録後</div>
-              <div class="proof-num">すぐ開始</div>
-              <div class="proof-copy">フォーム登録後、今後の案内や必要情報を受け取れます。</div>
-            </div>
-          </div>
-        </aside>
+        </div>
       </div>
     </section>
 
-    <section class="section alt" id="pain">
+    <section class="section alt" id="proof">
+      <div class="container">
+        <div class="eyebrow reveal">Numbers</div>
+        <h2 class="section-title reveal">問い合わせを増やすには、<span class="grad">「誰向けか」と「何が得られるか」</span>が一目で分かることが重要です</h2>
+        <p class="section-lead reveal">
+          このLPでは、登録率を上げるために「副業者専用」「月5万円を目指す」「案件導線を持てる」という3点を冒頭から明確にしています。
+        </p>
+
+        <div class="stats-grid">
+          <div class="side-card stat-card reveal">
+            <div class="stat-num">副業者専用</div>
+            <div class="stat-label">誰向けかが一目で分かる</div>
+          </div>
+          <div class="side-card stat-card reveal">
+            <div class="stat-num">月5万円</div>
+            <div class="stat-label">欲しい未来が伝わる</div>
+          </div>
+          <div class="side-card stat-card reveal">
+            <div class="stat-num">30秒</div>
+            <div class="stat-label">登録のハードルを下げる</div>
+          </div>
+          <div class="side-card stat-card reveal">
+            <div class="stat-num">無料</div>
+            <div class="stat-label">最初の行動を起こしやすい</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pain">
       <div class="container">
         <div class="eyebrow reveal">Problems</div>
-        <h2 class="section-title reveal">副業の動画編集者が、<span class="grad">つまずきやすい壁</span></h2>
-        <p class="section-lead reveal">
-          稼げない原因は、スキル不足だけではありません。むしろ多くの場合は、<strong>案件への入り口がないこと</strong>、そして<strong>継続案件につながる動き方を知らないこと</strong>です。
-        </p>
+        <h2 class="section-title reveal">副業の動画編集者が、<span class="grad">案件を取りにくい理由</span></h2>
+        <p class="section-lead reveal">問題は、編集技術だけではありません。多くの場合は、案件への入り口がないこと、継続につながる動き方を知らないことです。</p>
 
         <div class="pain-list">
-          <div class="pain-item reveal"><div>①</div><p><b>副業だから営業に時間をかけられない</b><br>本業が終わった後に営業や提案をするのは、想像以上に負担が大きい。</p></div>
-          <div class="pain-item reveal"><div>②</div><p><b>クラウドソーシングで価格競争に巻き込まれる</b><br>応募しても通らない、通っても安い、消耗だけが増える。</p></div>
-          <div class="pain-item reveal"><div>③</div><p><b>単発案件ばかりで収入が安定しない</b><br>作業した月だけ売上が立ち、翌月はゼロに戻る。</p></div>
-          <div class="pain-item reveal"><div>④</div><p><b>何を改善すれば案件獲得率が上がるのか分からない</b><br>プロフィール、提案文、ポートフォリオ、動線づくりが自己流のまま。</p></div>
-          <div class="pain-item reveal"><div>⑤</div><p><b>副業者専用の環境が少ない</b><br>独立前提のノウハウが多く、本業と両立したい人には合わないことが多い。</p></div>
+          <div class="pain-item reveal"><span>①</span><div><b>本業があるので営業に時間をかけられない</b><br>平日夜や休日だけで営業まで回すのは負担が大きい。</div></div>
+          <div class="pain-item reveal"><span>②</span><div><b>クラウドソーシングで価格競争に巻き込まれる</b><br>応募しても通らない、通っても安い、の繰り返しになりやすい。</div></div>
+          <div class="pain-item reveal"><span>③</span><div><b>単発案件ばかりで収入が安定しない</b><br>案件がある月とない月の差が大きく、精神的にも不安定になる。</div></div>
+          <div class="pain-item reveal"><span>④</span><div><b>副業者向けの現実的な情報が少ない</b><br>独立前提のノウハウは多いが、本業と両立したい人には合わない。</div></div>
+          <div class="pain-item reveal"><span>⑤</span><div><b>何を改善すれば案件獲得率が上がるのか分からない</b><br>プロフィール、提案文、ポートフォリオ、導線が自己流のままになりがち。</div></div>
+        </div>
+
+        <div class="highlight-band reveal">
+          <h3>だから必要なのは、<span class="grad-text">「もっと頑張ること」ではなく「正しい案件導線を持つこと」</span></h3>
+          <p>うまくいく人は、編集スキルだけでなく、案件につながる環境を持っています。このLPは、その入口をつくるための登録ページです。</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="benefits">
+    <section class="section alt" id="benefits">
       <div class="container">
         <div class="eyebrow reveal">Benefits</div>
-        <h2 class="section-title reveal">この登録ページは、<span class="grad">副業者専用</span>に設計しています</h2>
-        <p class="section-lead reveal">
-          「いつか独立したい人」ではなく、本業を続けながら動画編集で収入の柱を増やしたい人のための導線です。
-        </p>
-
-        <div class="before-after">
-          <div class="ba-card before reveal">
-            <h3>登録前</h3>
-            <ul>
-              <li>・案件の探し方がバラバラ</li>
-              <li>・単価が上がらない</li>
-              <li>・営業に疲れる</li>
-              <li>・副業なのに時間ばかりなくなる</li>
-            </ul>
-          </div>
-          <div class="arrow-mid reveal">→</div>
-          <div class="ba-card after reveal">
-            <h3>登録後のイメージ</h3>
-            <ul>
-              <li>・案件情報の接点を持てる</li>
-              <li>・継続案件につながる考え方を得られる</li>
-              <li>・副業者向けの動き方が分かる</li>
-              <li>・次の一歩が明確になる</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="feature-highlight">
-          <div class="feature-main reveal">
-            <div class="eyebrow">Why this works</div>
-            <h3>「スキルはあるのに稼げない」を、<span class="grad">案件導線の不足</span>から見直す</h3>
-            <p>
-              うまくいく人は、編集技術だけでなく、<strong>案件につながる環境</strong>と<strong>継続につながる動き方</strong>を持っています。だからこのページでは、単に「登録してください」ではなく、登録後に何が変わるかまで明確にしています。
-            </p>
-          </div>
-          <div class="feature-stack">
-            <div class="card reveal">
-              <div class="icon">📩</div>
-              <h3>案件情報を受け取れる</h3>
-              <p>まずは接点がないと始まりません。入口を持つことで、案件獲得の可能性が生まれます。</p>
-            </div>
-            <div class="card reveal">
-              <div class="icon">🔁</div>
-              <h3>継続案件を意識した導線</h3>
-              <p>単発消耗ではなく、次につながる働き方を前提にしています。</p>
-            </div>
-            <div class="card reveal">
-              <div class="icon">⏰</div>
-              <h3>副業者向けの現実的な設計</h3>
-              <p>本業のある人でも動けるよう、負担の少ない入り方を意識しています。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="features">
-      <div class="container">
-        <div class="eyebrow reveal">What you get</div>
         <h2 class="section-title reveal">登録すると、<span class="grad">受け取れること</span></h2>
-        <div class="grid-3" style="margin-top:30px;">
+
+        <div class="cards-4">
           <div class="card reveal">
             <div class="icon">🎯</div>
-            <h3>案件紹介のチャンス</h3>
-            <p>あなたのスキルや状況に応じた案件接点を持てる可能性があります。</p>
+            <h3>案件の入口を持てる</h3>
+            <p>接点がない状態から、案件情報につながるきっかけを持てます。</p>
+          </div>
+          <div class="card reveal">
+            <div class="icon">🔁</div>
+            <h3>継続案件の考え方が分かる</h3>
+            <p>単発で終わらない働き方を意識することで、安定収入に近づけます。</p>
           </div>
           <div class="card reveal">
             <div class="icon">📈</div>
-            <h3>単価アップのヒント</h3>
-            <p>安売りから抜け出すには、編集以外の見せ方や導線づくりも重要です。</p>
-          </div>
-          <div class="card reveal">
-            <div class="icon">🤝</div>
-            <h3>継続案件を意識した動き方</h3>
-            <p>一度きりで終わらないための視点を持つことで、収入の安定に近づけます。</p>
+            <h3>単価アップのヒントを得られる</h3>
+            <p>編集以外の見せ方や導線づくりも、単価に大きく影響します。</p>
           </div>
           <div class="card reveal">
             <div class="icon">🧭</div>
-            <h3>次に何をすべきかが明確になる</h3>
-            <p>「何から始めればいいか分からない」状態から抜け出しやすくなります。</p>
-          </div>
-          <div class="card reveal">
-            <div class="icon">🪜</div>
-            <h3>未経験〜経験者まで対応</h3>
-            <p>副業を始めたい人も、すでに実績がある人も、それぞれの次の一歩があります。</p>
-          </div>
-          <div class="card reveal">
-            <div class="icon">🔒</div>
-            <h3>登録無料・低リスク</h3>
-            <p>まずは情報を受け取り、自分に合うかを見極めるだけでも問題ありません。</p>
+            <h3>次の一歩が明確になる</h3>
+            <p>何から始めればいいか分からない状態から抜け出しやすくなります。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="flow">
+    <section class="section" id="results">
       <div class="container">
-        <div class="eyebrow reveal">How it starts</div>
-        <h2 class="section-title reveal">登録は、<span class="grad">3ステップで完了</span></h2>
-        <div class="steps">
-          <div class="step reveal">
-            <div class="step-no">1</div>
-            <div>
-              <h3>フォームを送信</h3>
-              <p>名前、メールアドレス、経験レベルなどを入力するだけ。30秒ほどで完了します。</p>
-            </div>
+        <div class="eyebrow reveal">Results & Cases</div>
+        <h2 class="section-title reveal">人は、<span class="grad">「自分でもできそう」と思えた時に登録します</span></h2>
+        <p class="section-lead reveal">そのため、LPでは実績やケース例をしっかり見せることが重要です。下記はそのまま使える見せ方の例です。</p>
+
+        <div class="result-grid">
+          <div class="result-card reveal">
+            <div class="result-tag">ケース例 01</div>
+            <h3>副業3ヶ月で初案件を獲得</h3>
+            <p>未経験からスタートし、プロフィール改善と案件導線づくりで最初の案件獲得につながった例。</p>
           </div>
-          <div class="step reveal">
-            <div class="step-no">2</div>
-            <div>
-              <h3>必要情報を受け取る</h3>
-              <p>登録後、今後の流れや必要な案内を受け取れます。</p>
-            </div>
+          <div class="result-card reveal">
+            <div class="result-tag">ケース例 02</div>
+            <h3>月5万円の副収入ラインへ到達</h3>
+            <p>単価の安い案件ばかりだった状態から、継続案件の取り方を意識して収入が安定し始めた例。</p>
           </div>
-          <div class="step reveal">
-            <div class="step-no">3</div>
-            <div>
-              <h3>案件導線づくりを始める</h3>
-              <p>副業者専用の入口として、次の一歩を明確にしていきます。</p>
-            </div>
+          <div class="result-card reveal">
+            <div class="result-tag">ケース例 03</div>
+            <h3>クラウドソーシング依存から脱却</h3>
+            <p>消耗する応募中心の働き方から、継続につながる案件接点づくりへ切り替えた例。</p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section alt" id="voices">
-      <div class="container">
-        <div class="eyebrow reveal">Voices</div>
-        <h2 class="section-title reveal">こんな人に、<span class="grad">特に向いています</span></h2>
-        <div class="voice-grid">
+        <div class="voices-grid">
           <div class="voice reveal">
             <div class="quote">“</div>
-            <p>副業で始めたいけれど、営業が苦手で動けない。まずは案件への接点がほしい。</p>
+            <p>副業だから時間がなく、何から手をつけるべきか分かりませんでした。まず案件導線を持てたことで、やることが整理できました。</p>
             <strong>会社員 / 編集歴3ヶ月</strong>
-            <span>未経験〜初級者</span>
+            <span>初案件を目指す人</span>
           </div>
           <div class="voice reveal">
             <div class="quote">“</div>
-            <p>クラウドソーシングで疲れてしまった。もっと継続につながる仕事の取り方を知りたい。</p>
+            <p>単発案件ばかりで疲れていましたが、継続案件を意識した動き方に変わって、考え方が大きく変わりました。</p>
             <strong>会社員 / 副業1年</strong>
-            <span>初級〜中級者</span>
+            <span>月5万円を目指す人</span>
           </div>
           <div class="voice reveal">
             <div class="quote">“</div>
-            <p>本業があるからこそ、限られた時間で効率よく案件導線を作りたい。</p>
-            <strong>フルタイム勤務 / 編集経験あり</strong>
-            <span>中級者以上</span>
+            <p>本業を続けながらでも動ける前提なのが安心でした。独立前提の話ばかりじゃないのが良かったです。</p>
+            <strong>フルタイム勤務 / 経験者</strong>
+            <span>継続案件を増やしたい人</span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="reasons">
+      <div class="container">
+        <div class="eyebrow reveal">Why now</div>
+        <h2 class="section-title reveal">今登録しないと、<span class="grad">何が起きるか</span></h2>
+
+        <div class="cards-3">
+          <div class="card reveal">
+            <div class="icon">⏳</div>
+            <h3>案件が取れない状態が続く</h3>
+            <p>行動を先延ばしにすると、今の悩みがそのまま継続しやすくなります。</p>
+          </div>
+          <div class="card reveal">
+            <div class="icon">💸</div>
+            <h3>低単価案件に疲弊し続ける</h3>
+            <p>案件導線がないままだと、価格競争から抜けにくくなります。</p>
+          </div>
+          <div class="card reveal">
+            <div class="icon">📉</div>
+            <h3>副業収入の柱が育たない</h3>
+            <p>本業以外の収入源を育てるには、早めに入口を作ることが大切です。</p>
+          </div>
+        </div>
+
+        <div class="highlight-band reveal">
+          <h3>月10件問い合わせを狙うLPは、<span class="grad-text">「今動いた方が得だ」と感じてもらう設計</span>が必要です</h3>
+          <p>そのため、悩みの共感だけで終わらせず、今登録する理由まで言語化しています。</p>
         </div>
       </div>
     </section>
@@ -650,64 +1069,92 @@
     <section class="section" id="trust">
       <div class="container">
         <div class="eyebrow reveal">Trust</div>
-        <h2 class="section-title reveal">登録前に感じる不安も、<span class="grad">できるだけ減らしました</span></h2>
-        <div class="trust-strip">
-          <div class="trust-item reveal">
-            <div>🆓</div>
-            <strong>登録無料</strong>
-            <p>まずは情報取得だけでもOK</p>
+        <h2 class="section-title reveal">登録前の不安を、<span class="grad">先に解消する</span></h2>
+
+        <div class="trust-grid">
+          <div class="trust-item reveal" style="padding:20px; text-align:center;">
+            <div style="font-size:28px;">🆓</div>
+            <h3 style="margin-top:8px;">登録無料</h3>
+            <p>まずは情報を受け取るだけでもOKです。</p>
           </div>
-          <div class="trust-item reveal">
-            <div>🚫</div>
-            <strong>無理な勧誘なし</strong>
-            <p>不安を煽る売り込みはしません</p>
+          <div class="trust-item reveal" style="padding:20px; text-align:center;">
+            <div style="font-size:28px;">🚫</div>
+            <h3 style="margin-top:8px;">無理な勧誘なし</h3>
+            <p>不安を煽るような売り込みはしません。</p>
           </div>
-          <div class="trust-item reveal">
-            <div>🔐</div>
-            <strong>個人情報に配慮</strong>
-            <p>フォーム情報は適切に管理</p>
+          <div class="trust-item reveal" style="padding:20px; text-align:center;">
+            <div style="font-size:28px;">🔐</div>
+            <h3 style="margin-top:8px;">情報管理に配慮</h3>
+            <p>送信された内容は適切に扱います。</p>
           </div>
-          <div class="trust-item reveal">
-            <div>🧩</div>
-            <strong>副業者専用</strong>
-            <p>本業との両立前提で設計</p>
+          <div class="trust-item reveal" style="padding:20px; text-align:center;">
+            <div style="font-size:28px;">🧩</div>
+            <h3 style="margin-top:8px;">副業者専用</h3>
+            <p>本業との両立を前提にしています。</p>
           </div>
         </div>
 
         <div class="faq">
           <details class="reveal">
             <summary>未経験でも登録できますか？</summary>
-            <p>はい。未経験の方でも登録可能です。今の経験値に応じた次の一歩を明確にする入口として活用できます。</p>
+            <p>はい。未経験でも問題ありません。今のレベルに合わせて、まず何を整えるべきかを明確にする入口になります。</p>
           </details>
           <details class="reveal">
             <summary>本業が忙しくても大丈夫ですか？</summary>
-            <p>はい。このページは副業者専用を前提にしているため、本業がある方でも動きやすい入口として設計しています。</p>
+            <p>はい。このページは副業者専用を前提にしているため、本業がある方でも動きやすい設計にしています。</p>
           </details>
           <details class="reveal">
             <summary>登録したら必ず案件がもらえますか？</summary>
-            <p>必ずの保証はできませんが、案件への接点や継続につながる動線づくりのための入口になります。</p>
+            <p>必ずの保証はできませんが、案件導線を持つ入口になり、継続案件につながる考え方も受け取れます。</p>
           </details>
           <details class="reveal">
             <summary>費用はかかりますか？</summary>
-            <p>登録自体は無料です。まずは情報取得や導線確認のための第一歩として利用できます。</p>
+            <p>登録自体は無料です。まずは低リスクで始められます。</p>
           </details>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="entry">
+    <section class="section alt" id="flow">
+      <div class="container">
+        <div class="eyebrow reveal">Flow</div>
+        <h2 class="section-title reveal">登録後の流れも、<span class="grad">シンプルに</span></h2>
+
+        <div class="cards-3">
+          <div class="step reveal">
+            <div class="step-no">1</div>
+            <div>
+              <h3>フォーム送信</h3>
+              <p>まずは名前、メールアドレス、経験レベルなどを入力するだけ。</p>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-no">2</div>
+            <div>
+              <h3>必要情報を受け取る</h3>
+              <p>今後の流れや案内を受け取れます。</p>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-no">3</div>
+            <div>
+              <h3>案件導線づくりを始める</h3>
+              <p>副業者専用の入口として、次の一歩を明確にします。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="entry">
       <div class="container">
         <div class="eyebrow reveal">Entry</div>
-        <h2 class="section-title reveal"><span class="grad">副業者専用</span>の案件導線を、ここから始める</h2>
-        <p class="section-lead reveal">
-          今のまま案件が取れない状態を続けるより、まずは入口を持つ方が早い。迷っているなら、無料登録から始めてください。
-        </p>
+        <h2 class="section-title reveal"><span class="grad">副業者専用</span>の案件導線に、今すぐ登録する</h2>
+        <p class="section-lead reveal">月10件問い合わせを狙うなら、最後まで読んだ人が迷わず登録できるように、下部にもフォームを置くのが有効です。</p>
 
-        <form id="entry-form" action="https://formspree.io/f/mreryddq" method="POST" class="reveal">
-          <div class="form-head">
-            <h3>無料でクリエーター登録する</h3>
-            <p>副業者専用の案件導線に登録して、次の一歩を明確にしましょう。</p>
-          </div>
+        <form id="main-form" class="full-form reveal" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+          <h3 style="font-size:clamp(24px,3vw,34px); line-height:1.25;">無料でクリエーター登録する</h3>
+          <p style="margin-top:10px; color:var(--muted);">副業者専用の案件導線に登録して、次の一歩を明確にしましょう。</p>
 
           <div class="form-grid">
             <div class="field">
@@ -724,17 +1171,17 @@
                 <option value="">選択してください</option>
                 <option>未経験</option>
                 <option>勉強中</option>
-                <option>副業で始めたばかり</option>
+                <option>副業を始めたばかり</option>
                 <option>副業で案件経験あり</option>
                 <option>継続案件あり</option>
               </select>
             </div>
             <div class="field">
-              <label for="goal">目指したい状態</label>
+              <label for="goal">目標</label>
               <select id="goal" name="goal" required>
                 <option value="">選択してください</option>
-                <option>まずは初案件を取りたい</option>
-                <option>副業で月5万円を目指したい</option>
+                <option>初案件を取りたい</option>
+                <option>月5万円を目指したい</option>
                 <option>継続案件を増やしたい</option>
                 <option>単価を上げたい</option>
                 <option>将来的に独立も考えたい</option>
@@ -746,20 +1193,18 @@
             </div>
           </div>
 
-          <input type="hidden" name="_subject" value="【副業者専用】動画編集クリエーター登録がありました">
-          <input type="hidden" name="source" value="GitHub Pages LP">
+          <input type="hidden" name="_subject" value="【副業者専用】動画編集クリエーター登録がありました（下部フォーム）">
+          <input type="hidden" name="source" value="GitHub Pages LP Main Form">
 
-          <div class="submit-wrap">
-            <button type="submit" class="submit-btn">30秒で無料登録する</button>
-            <p class="form-meta">登録無料 / 無理な勧誘なし / 送信後に確認メッセージが表示されます</p>
-            <div id="form-message" class="form-message"></div>
-          </div>
+          <button type="submit" class="submit-btn" style="margin-top:18px;">30秒で無料登録する</button>
+          <p class="form-meta">登録無料 / 無理な勧誘なし / 送信後に確認メッセージが表示されます</p>
+          <div id="main-message" class="form-message"></div>
         </form>
 
         <div class="cta-box reveal">
-          <h3>副業者専用の環境を持つだけで、<br>動きやすさは大きく変わります。</h3>
-          <p>本業があるからこそ、やみくもに動くより、まずは案件導線を持つことが大切です。</p>
-          <div class="hero-actions">
+          <h3>副業者専用の環境を持つだけで、<br><span class="grad-text">案件の取りやすさは大きく変わります。</span></h3>
+          <p>本業があるからこそ、やみくもに動くより、まずは案件導線を持つ方が早いです。</p>
+          <div class="hero-actions" style="justify-content:center; margin-top:20px;">
             <a href="#entry" class="btn-primary">今すぐ無料で登録する</a>
           </div>
         </div>
@@ -769,23 +1214,23 @@
 
   <footer>
     <div class="container footer-grid">
-      <div class="footer-brand">
-        <h3>動画編集クリエーター登録</h3>
-        <p style="margin-top:10px;">副業者専用の案件導線ページ。案件獲得の入口づくりを、最短で始めるための登録ページです。</p>
+      <div>
+        <h3 style="font-size:22px;">動画編集クリエーター登録</h3>
+        <p style="margin-top:10px;">副業者専用の案件導線ページ。本業を続けながら、動画編集で月5万円を目指す人向けの登録ページです。</p>
         <p style="margin-top:14px;">© 2026 Creator Platform</p>
       </div>
       <div class="footer-links">
         <a href="#entry">無料登録する</a>
-        <a href="#benefits">登録メリット</a>
+        <a href="#results">ケース例を見る</a>
         <a href="#trust">よくある質問</a>
-        <p>※ プライバシーポリシーや運営者情報のページを別途追加すると、信頼感がさらに上がります。</p>
+        <p>※ 運営者情報、プライバシーポリシー、利用規約のページを追加すると信頼感がさらに上がります。</p>
       </div>
     </div>
   </footer>
 
   <div class="sticky-cta">
     <div class="sticky-copy">
-      <strong>副業者専用の案件導線を、今すぐ確保。</strong>
+      <strong>副業者専用。動画編集で月5万円を目指す入口へ。</strong>
       <span>登録無料 / 30秒で完了</span>
     </div>
     <a href="#entry" class="sticky-btn">無料登録</a>
@@ -800,43 +1245,48 @@
     }, { threshold: 0.12 });
     reveals.forEach(el => observer.observe(el));
 
-    const form = document.getElementById('entry-form');
-    const msg = document.getElementById('form-message');
+    async function setupAjaxForm(formId, messageId) {
+      const form = document.getElementById(formId);
+      const msg = document.getElementById(messageId);
+      if (!form || !msg) return;
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      msg.className = 'form-message';
-      msg.textContent = '';
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        msg.className = 'form-message';
+        msg.textContent = '';
 
-      const action = form.getAttribute('action');
-      if (!action || action.includes('REPLACE_WITH_YOUR_FORM_ID')) {
-        msg.className = 'form-message error';
-        msg.textContent = 'FormspreeのForm IDを設定してください。';
-        return;
-      }
-
-      const formData = new FormData(form);
-
-      try {
-        const res = await fetch(action, {
-          method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-        });
-
-        if (res.ok) {
-          msg.className = 'form-message success';
-          msg.textContent = '登録ありがとうございます。内容を確認のうえ、順次ご案内します。';
-          form.reset();
-        } else {
+        const action = form.getAttribute('action');
+        if (!action || action.includes('REPLACE_WITH_YOUR_FORM_ID')) {
           msg.className = 'form-message error';
-          msg.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
+          msg.textContent = 'FormspreeのForm IDを設定してください。';
+          return;
         }
-      } catch (error) {
-        msg.className = 'form-message error';
-        msg.textContent = '通信エラーが発生しました。接続環境をご確認のうえ再度お試しください。';
-      }
-    });
+
+        try {
+          const formData = new FormData(form);
+          const res = await fetch(action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (res.ok) {
+            msg.className = 'form-message success';
+            msg.textContent = '登録ありがとうございます。内容を確認のうえ、順次ご案内します。';
+            form.reset();
+          } else {
+            msg.className = 'form-message error';
+            msg.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
+          }
+        } catch (error) {
+          msg.className = 'form-message error';
+          msg.textContent = '通信エラーが発生しました。接続環境をご確認のうえ再度お試しください。';
+        }
+      });
+    }
+
+    setupAjaxForm('quick-form', 'quick-message');
+    setupAjaxForm('main-form', 'main-message');
   </script>
 </body>
 </html>
