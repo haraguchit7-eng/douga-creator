@@ -13,8 +13,6 @@
       --bg2: #12131a;
       --bg3: #171924;
       --card: rgba(255,255,255,0.05);
-      --card-strong: rgba(255,255,255,0.08);
-      --line: rgba(255,255,255,0.1);
       --text: #ffffff;
       --muted: #c8ccd6;
       --sub: #9aa1b0;
@@ -23,8 +21,6 @@
       --accent3: #ffe29a;
       --grad: linear-gradient(135deg, #ff7b1b 0%, #ffb12f 55%, #ffe07a 100%);
       --grad-text: linear-gradient(90deg, #ff9e39 0%, #ffe07a 100%);
-      --danger: #ff6b35;
-      --success: #22c55e;
       --radius: 22px;
       --shadow: 0 18px 60px rgba(0,0,0,0.35);
       --max: 1160px;
@@ -409,7 +405,6 @@
       margin-bottom: 12px;
     }
 
-    .stats-grid,
     .cards-3,
     .cards-4,
     .result-grid,
@@ -419,33 +414,11 @@
       gap: 18px;
     }
 
-    .stats-grid { grid-template-columns: repeat(4, 1fr); margin-top: 28px; }
     .cards-3 { grid-template-columns: repeat(3, 1fr); margin-top: 28px; }
     .cards-4 { grid-template-columns: repeat(4, 1fr); margin-top: 28px; }
     .result-grid { grid-template-columns: repeat(3, 1fr); margin-top: 30px; }
     .trust-grid { grid-template-columns: repeat(4, 1fr); margin-top: 28px; }
     .voices-grid { grid-template-columns: repeat(3, 1fr); margin-top: 28px; }
-
-    .stat-card {
-      padding: 24px 18px;
-      text-align: center;
-    }
-
-    .stat-num {
-      font-size: clamp(26px, 4vw, 42px);
-      line-height: 1.1;
-      font-weight: 900;
-      background: var(--grad-text);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .stat-label {
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 14px;
-    }
 
     .card {
       padding: 24px;
@@ -747,7 +720,6 @@
 
     @media (max-width: 1040px) {
       .hero-grid,
-      .stats-grid,
       .cards-3,
       .cards-4,
       .result-grid,
@@ -771,7 +743,6 @@
       .section { padding: 72px 0; }
       .topbar-inner { min-height: 64px; }
       .brand div:last-child { display: none; }
-      .stats-grid,
       .cards-3,
       .cards-4,
       .result-grid,
@@ -824,7 +795,7 @@
             <span class="accent">動画編集で月5万円</span>を目指せる。
           </h1>
           <p class="hero-sub">
-            動画編集スキルはあるのに案件が取れない。営業が苦手。単価が安い。そんな悩みを抱える人へ。<strong>案件導線・継続案件の考え方・単価アップのヒント</strong>を無料で受け取れる登録ページです。
+            動画編集スキルはあるのに案件が取れない。営業が苦手。単価が安い。そんな悩みを抱える方へ。<strong>案件導線・継続案件の考え方・単価アップのヒント</strong>を無料で受け取れる登録ページです。
           </p>
 
           <div class="hero-badges">
@@ -835,20 +806,20 @@
           </div>
 
           <div class="hero-points">
-            <div class="point"><strong>案件の入口を持てる</strong>まずは接点がないと始まらない。案件導線を持つことでチャンスが生まれます。</div>
-            <div class="point"><strong>継続案件を意識できる</strong>単発で疲弊する働き方から、続く案件を取る視点へ。</div>
+            <div class="point"><strong>案件の入口を持てる</strong>まずは接点がないと始まりません。案件導線を持つことでチャンスが生まれます。</div>
+            <div class="point"><strong>継続案件を意識できる</strong>単発で疲弊する働き方から、続く案件を取る視点へ変えていけます。</div>
             <div class="point"><strong>本業との両立前提</strong>独立前提ではなく、副業だからこその現実的な動き方に寄せています。</div>
           </div>
 
           <div class="hero-actions">
             <a href="#entry" class="btn-primary">無料で案件導線に登録する</a>
-            <a href="#results" class="btn-secondary">実績を見る</a>
+            <a href="#results" class="btn-secondary">利用イメージを見る</a>
           </div>
           <p class="hero-note">30秒で登録 / まずは情報を受け取るだけでもOK</p>
         </div>
 
         <div class="hero-side reveal">
-          <form id="quick-form" class="quick-form" action="https://formspree.io/f/mreryddq"/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+          <form id="quick-form" class="quick-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
             <h3>今すぐ無料登録して、<br><span class="grad-text">案件獲得の入口</span>を持つ</h3>
             <p>まずはメールアドレス登録から。副業者専用の導線に参加できます。</p>
 
@@ -899,67 +870,42 @@
           </form>
 
           <div class="side-card">
-            <h4>こんな人におすすめです</h4>
-            <p>・動画編集スキルはあるのに案件が取れない<br>
-               ・副業で月5万円を目指したい<br>
-               ・クラウドソーシングの消耗から抜けたい<br>
-               ・本業があるから効率よく案件導線を作りたい</p>
+            <h4>こんな方におすすめです</h4>
+            <p>
+              ・動画編集スキルはあるのに案件が取れない<br>
+              ・副業で月5万円を目指したい<br>
+              ・クラウドソーシングの消耗から抜けたい<br>
+              ・本業があるから効率よく案件導線を作りたい
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="proof">
-      <div class="container">
-        <div class="eyebrow reveal">Numbers</div>
-        <h2 class="section-title reveal">問い合わせを増やすには、<span class="grad">「誰向けか」と「何が得られるか」</span>が一目で分かることが重要です</h2>
-        <p class="section-lead reveal">
-          このLPでは、登録率を上げるために「副業者専用」「月5万円を目指す」「案件導線を持てる」という3点を冒頭から明確にしています。
-        </p>
-
-        <div class="stats-grid">
-          <div class="side-card stat-card reveal">
-            <div class="stat-num">副業者専用</div>
-            <div class="stat-label">誰向けかが一目で分かる</div>
-          </div>
-          <div class="side-card stat-card reveal">
-            <div class="stat-num">月5万円</div>
-            <div class="stat-label">欲しい未来が伝わる</div>
-          </div>
-          <div class="side-card stat-card reveal">
-            <div class="stat-num">30秒</div>
-            <div class="stat-label">登録のハードルを下げる</div>
-          </div>
-          <div class="side-card stat-card reveal">
-            <div class="stat-num">無料</div>
-            <div class="stat-label">最初の行動を起こしやすい</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="pain">
+    <section class="section alt" id="pain">
       <div class="container">
         <div class="eyebrow reveal">Problems</div>
-        <h2 class="section-title reveal">副業の動画編集者が、<span class="grad">案件を取りにくい理由</span></h2>
-        <p class="section-lead reveal">問題は、編集技術だけではありません。多くの場合は、案件への入り口がないこと、継続につながる動き方を知らないことです。</p>
+        <h2 class="section-title reveal">こんなお悩み、<span class="grad">ありませんか？</span></h2>
+        <p class="section-lead reveal">
+          問題は、編集技術だけではありません。多くの場合は、案件への入り口がないこと、継続につながる動き方を知らないことです。
+        </p>
 
         <div class="pain-list">
           <div class="pain-item reveal"><span>①</span><div><b>本業があるので営業に時間をかけられない</b><br>平日夜や休日だけで営業まで回すのは負担が大きい。</div></div>
           <div class="pain-item reveal"><span>②</span><div><b>クラウドソーシングで価格競争に巻き込まれる</b><br>応募しても通らない、通っても安い、の繰り返しになりやすい。</div></div>
           <div class="pain-item reveal"><span>③</span><div><b>単発案件ばかりで収入が安定しない</b><br>案件がある月とない月の差が大きく、精神的にも不安定になる。</div></div>
-          <div class="pain-item reveal"><span>④</span><div><b>副業者向けの現実的な情報が少ない</b><br>独立前提のノウハウは多いが、本業と両立したい人には合わない。</div></div>
+          <div class="pain-item reveal"><span>④</span><div><b>副業者向けの現実的な情報が少ない</b><br>独立前提のノウハウは多いが、本業と両立したい方には合わない。</div></div>
           <div class="pain-item reveal"><span>⑤</span><div><b>何を改善すれば案件獲得率が上がるのか分からない</b><br>プロフィール、提案文、ポートフォリオ、導線が自己流のままになりがち。</div></div>
         </div>
 
         <div class="highlight-band reveal">
-          <h3>だから必要なのは、<span class="grad-text">「もっと頑張ること」ではなく「正しい案件導線を持つこと」</span></h3>
-          <p>うまくいく人は、編集スキルだけでなく、案件につながる環境を持っています。このLPは、その入口をつくるための登録ページです。</p>
+          <h3>必要なのは、<span class="grad-text">「もっと頑張ること」ではなく「正しい案件導線を持つこと」</span></h3>
+          <p>うまくいく方は、編集スキルだけでなく、案件につながる環境を持っています。このページは、その入口をつくるための登録ページです。</p>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="benefits">
+    <section class="section" id="benefits">
       <div class="container">
         <div class="eyebrow reveal">Benefits</div>
         <h2 class="section-title reveal">登録すると、<span class="grad">受け取れること</span></h2>
@@ -989,25 +935,27 @@
       </div>
     </section>
 
-    <section class="section" id="results">
+    <section class="section alt" id="results">
       <div class="container">
-        <div class="eyebrow reveal">Results & Cases</div>
-        <h2 class="section-title reveal">人は、<span class="grad">「自分でもできそう」と思えた時に登録します</span></h2>
-        <p class="section-lead reveal">そのため、LPでは実績やケース例をしっかり見せることが重要です。下記はそのまま使える見せ方の例です。</p>
+        <div class="eyebrow reveal">Cases</div>
+        <h2 class="section-title reveal">実際に、<span class="grad">こんな変化を目指せます</span></h2>
+        <p class="section-lead reveal">
+          副業で動画編集に取り組む方が、案件獲得や収入アップを目指すためのイメージです。
+        </p>
 
         <div class="result-grid">
           <div class="result-card reveal">
-            <div class="result-tag">ケース例 01</div>
+            <div class="result-tag">ケース 01</div>
             <h3>副業3ヶ月で初案件を獲得</h3>
             <p>未経験からスタートし、プロフィール改善と案件導線づくりで最初の案件獲得につながった例。</p>
           </div>
           <div class="result-card reveal">
-            <div class="result-tag">ケース例 02</div>
+            <div class="result-tag">ケース 02</div>
             <h3>月5万円の副収入ラインへ到達</h3>
             <p>単価の安い案件ばかりだった状態から、継続案件の取り方を意識して収入が安定し始めた例。</p>
           </div>
           <div class="result-card reveal">
-            <div class="result-tag">ケース例 03</div>
+            <div class="result-tag">ケース 03</div>
             <h3>クラウドソーシング依存から脱却</h3>
             <p>消耗する応募中心の働き方から、継続につながる案件接点づくりへ切り替えた例。</p>
           </div>
@@ -1018,34 +966,34 @@
             <div class="quote">“</div>
             <p>副業だから時間がなく、何から手をつけるべきか分かりませんでした。まず案件導線を持てたことで、やることが整理できました。</p>
             <strong>会社員 / 編集歴3ヶ月</strong>
-            <span>初案件を目指す人</span>
+            <span>初案件を目指す方</span>
           </div>
           <div class="voice reveal">
             <div class="quote">“</div>
             <p>単発案件ばかりで疲れていましたが、継続案件を意識した動き方に変わって、考え方が大きく変わりました。</p>
             <strong>会社員 / 副業1年</strong>
-            <span>月5万円を目指す人</span>
+            <span>月5万円を目指す方</span>
           </div>
           <div class="voice reveal">
             <div class="quote">“</div>
             <p>本業を続けながらでも動ける前提なのが安心でした。独立前提の話ばかりじゃないのが良かったです。</p>
             <strong>フルタイム勤務 / 経験者</strong>
-            <span>継続案件を増やしたい人</span>
+            <span>継続案件を増やしたい方</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="reasons">
+    <section class="section" id="reasons">
       <div class="container">
         <div class="eyebrow reveal">Why now</div>
-        <h2 class="section-title reveal">今登録しないと、<span class="grad">何が起きるか</span></h2>
+        <h2 class="section-title reveal">今、<span class="grad">登録しておくべき理由</span></h2>
 
         <div class="cards-3">
           <div class="card reveal">
             <div class="icon">⏳</div>
             <h3>案件が取れない状態が続く</h3>
-            <p>行動を先延ばしにすると、今の悩みがそのまま継続しやすくなります。</p>
+            <p>行動を先延ばしにすると、今の悩みがそのまま続きやすくなります。</p>
           </div>
           <div class="card reveal">
             <div class="icon">💸</div>
@@ -1060,13 +1008,13 @@
         </div>
 
         <div class="highlight-band reveal">
-          <h3>月10件問い合わせを狙うLPは、<span class="grad-text">「今動いた方が得だ」と感じてもらう設計</span>が必要です</h3>
-          <p>そのため、悩みの共感だけで終わらせず、今登録する理由まで言語化しています。</p>
+          <h3>案件獲得は、<span class="grad-text">早く動いた方が有利</span>です</h3>
+          <p>副業で収入の柱を増やしたいなら、まずは案件導線を持つことが大切です。今のうちに入口を作っておくことで、次のチャンスを逃しにくくなります。</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="trust">
+    <section class="section alt" id="trust">
       <div class="container">
         <div class="eyebrow reveal">Trust</div>
         <h2 class="section-title reveal">登録前の不安を、<span class="grad">先に解消する</span></h2>
@@ -1115,7 +1063,7 @@
       </div>
     </section>
 
-    <section class="section alt" id="flow">
+    <section class="section" id="flow">
       <div class="container">
         <div class="eyebrow reveal">Flow</div>
         <h2 class="section-title reveal">登録後の流れも、<span class="grad">シンプルに</span></h2>
@@ -1146,11 +1094,11 @@
       </div>
     </section>
 
-    <section class="section" id="entry">
+    <section class="section alt" id="entry">
       <div class="container">
         <div class="eyebrow reveal">Entry</div>
         <h2 class="section-title reveal"><span class="grad">副業者専用</span>の案件導線に、今すぐ登録する</h2>
-        <p class="section-lead reveal">月10件問い合わせを狙うなら、最後まで読んだ人が迷わず登録できるように、下部にもフォームを置くのが有効です。</p>
+        <p class="section-lead reveal">副業で動画編集の案件獲得を目指す方は、まずはこちらから無料登録してください。</p>
 
         <form id="main-form" class="full-form reveal" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
           <h3 style="font-size:clamp(24px,3vw,34px); line-height:1.25;">無料でクリエーター登録する</h3>
@@ -1216,12 +1164,12 @@
     <div class="container footer-grid">
       <div>
         <h3 style="font-size:22px;">動画編集クリエーター登録</h3>
-        <p style="margin-top:10px;">副業者専用の案件導線ページ。本業を続けながら、動画編集で月5万円を目指す人向けの登録ページです。</p>
+        <p style="margin-top:10px;">副業者専用の案件導線ページ。本業を続けながら、動画編集で月5万円を目指す方のための登録ページです。</p>
         <p style="margin-top:14px;">© 2026 Creator Platform</p>
       </div>
       <div class="footer-links">
         <a href="#entry">無料登録する</a>
-        <a href="#results">ケース例を見る</a>
+        <a href="#results">利用イメージを見る</a>
         <a href="#trust">よくある質問</a>
         <p>※ 運営者情報、プライバシーポリシー、利用規約のページを追加すると信頼感がさらに上がります。</p>
       </div>
